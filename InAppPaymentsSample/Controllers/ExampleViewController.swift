@@ -63,7 +63,7 @@ class ExampleViewController: UIViewController {
     }
     
     private var serverHostSet: Bool {
-        return Constants.Square.CHARGE_SERVER != "REPLACE_ME"
+        return Constants.Square.CHARGE_SERVER_HOST != "REPLACE_ME"
     }
     
     private var appleMerchanIdSet: Bool {
@@ -129,7 +129,7 @@ extension ExampleViewController: OrderViewControllerDelegate {
     
     private func showCurlInformation() {
         let alert = UIAlertController(title: "Nonce generated but not charged",
-                                      message: "Check your console for a CURL command to charge the nonce, or replace Constants.Square.CHARGE_SERVER with your server host.",
+                                      message: "Check your console for a CURL command to charge the nonce, or replace Constants.Square.CHARGE_SERVER_HOST with your server host.",
                                       preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
