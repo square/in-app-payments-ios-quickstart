@@ -17,7 +17,6 @@
 		2E46D2F821B9D65D006CA233 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E46D2F721B9D65D006CA233 /* Style.swift */; };
 		2E46D2FC21B9E4A2006CA233 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E46D2FB21B9E4A2006CA233 /* HeaderView.swift */; };
 		2E58CC6621B7409000DFE6B0 /* TableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E58CC6521B7409000DFE6B0 /* TableRowView.swift */; };
-		5ED2EC3C5CFCBA60F6B8FBA6 /* libPods-InAppPaymentsSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AA35CFE584EBCD879AC0A0 /* libPods-InAppPaymentsSample.a */; };
 		72B97890219CE5FB001C964B /* ChargeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9788F219CE5FB001C964B /* ChargeApi.swift */; };
 		72C929FB217E8CFE006A02AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C929FA217E8CFE006A02AF /* AppDelegate.swift */; };
 		72C92A02217E8CFF006A02AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C92A01217E8CFF006A02AF /* Assets.xcassets */; };
@@ -26,8 +25,7 @@
 		72C92A14217FDEF2006A02AF /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C92A13217FDEF2006A02AF /* ExampleView.swift */; };
 		72C92A162180C3D3006A02AF /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C92A152180C3D3006A02AF /* OrderViewController.swift */; };
 		72C92A182180C3FF006A02AF /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C92A172180C3FF006A02AF /* OrderView.swift */; };
-		72D1F24121C3548500517BAE /* SquareInAppPaymentsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D1F24021C3548500517BAE /* SquareInAppPaymentsSDK.framework */; };
-		72D1F24221C3548500517BAE /* SquareInAppPaymentsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 72D1F24021C3548500517BAE /* SquareInAppPaymentsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC6913EBF1D8006AA26B7FB6 /* Pods_InAppPaymentsSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C31A54A62C6BEDE218BA60 /* Pods_InAppPaymentsSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,7 +35,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				72D1F24221C3548500517BAE /* SquareInAppPaymentsSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,7 +42,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		06AA35CFE584EBCD879AC0A0 /* libPods-InAppPaymentsSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InAppPaymentsSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E46D2E321B9A4BE006CA233 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		2E46D2E621B9A672006CA233 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		2E46D2E921B9AABB006CA233 /* extension-UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension-UIView.swift"; sourceTree = "<group>"; };
@@ -56,6 +52,7 @@
 		2E46D2F721B9D65D006CA233 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		2E46D2FB21B9E4A2006CA233 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		2E58CC6521B7409000DFE6B0 /* TableRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRowView.swift; sourceTree = "<group>"; };
+		53C31A54A62C6BEDE218BA60 /* Pods_InAppPaymentsSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InAppPaymentsSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		726602272183C5AF00EAB0D9 /* mCommExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mCommExample.entitlements; sourceTree = "<group>"; };
 		72B9788F219CE5FB001C964B /* ChargeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeApi.swift; sourceTree = "<group>"; };
 		72C929F7217E8CFE006A02AF /* InAppPaymentsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InAppPaymentsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +64,6 @@
 		72C92A13217FDEF2006A02AF /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
 		72C92A152180C3D3006A02AF /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		72C92A172180C3FF006A02AF /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
-		72D1F24021C3548500517BAE /* SquareInAppPaymentsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SquareInAppPaymentsSDK.framework; sourceTree = "<group>"; };
 		72EB0DBC2188ACD60010CE0B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9CBD217F62E5DBF3C04A1CCB /* Pods-InAppPaymentsSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InAppPaymentsSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InAppPaymentsSample/Pods-InAppPaymentsSample.debug.xcconfig"; sourceTree = "<group>"; };
 		A82933F3919BDE3EA6308E84 /* Pods-InAppPaymentsSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InAppPaymentsSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-InAppPaymentsSample/Pods-InAppPaymentsSample.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,8 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72D1F24121C3548500517BAE /* SquareInAppPaymentsSDK.framework in Frameworks */,
-				5ED2EC3C5CFCBA60F6B8FBA6 /* libPods-InAppPaymentsSample.a in Frameworks */,
+				EC6913EBF1D8006AA26B7FB6 /* Pods_InAppPaymentsSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +129,7 @@
 		4D2CBFB751DB38ABB886D1EE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				06AA35CFE584EBCD879AC0A0 /* libPods-InAppPaymentsSample.a */,
+				53C31A54A62C6BEDE218BA60 /* Pods_InAppPaymentsSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,7 +146,6 @@
 		72C929EE217E8CFE006A02AF = {
 			isa = PBXGroup;
 			children = (
-				72D1F24021C3548500517BAE /* SquareInAppPaymentsSDK.framework */,
 				72EB0DBC2188ACD60010CE0B /* README.md */,
 				72C929F9217E8CFE006A02AF /* InAppPaymentsSample */,
 				72C929F8217E8CFE006A02AF /* Products */,
@@ -218,7 +212,8 @@
 				72C929F4217E8CFE006A02AF /* Frameworks */,
 				72C929F5217E8CFE006A02AF /* Resources */,
 				72D1F23521B747C400517BAE /* Embed Frameworks */,
-				72C92A10217E8E73006A02AF /* ShellScript */,
+				1F57FB744F6663C80AC2E825 /* [CP] Embed Pods Frameworks */,
+				72C92A10217E8E73006A02AF /* Install SquareInAppPayments */,
 			);
 			buildRules = (
 			);
@@ -241,6 +236,7 @@
 				TargetAttributes = {
 					72C929F6217E8CFE006A02AF = {
 						CreatedOnToolsVersion = 9.4;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplePay = {
 								enabled = 0;
@@ -280,13 +276,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		72C92A10217E8E73006A02AF /* ShellScript */ = {
+		1F57FB744F6663C80AC2E825 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-InAppPaymentsSample/Pods-InAppPaymentsSample-frameworks.sh",
+				"${PODS_ROOT}/SquareInAppPaymentsSDK/SquareInAppPaymentsSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SquareInAppPaymentsSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InAppPaymentsSample/Pods-InAppPaymentsSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72C92A10217E8E73006A02AF /* Install SquareInAppPayments */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Install SquareInAppPayments";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,8 +482,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -484,10 +502,7 @@
 				);
 				INFOPLIST_FILE = InAppPaymentsSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.supercookie;
 				PRODUCT_NAME = InAppPaymentsSample;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -511,10 +526,7 @@
 				);
 				INFOPLIST_FILE = InAppPaymentsSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.supercookie;
 				PRODUCT_NAME = InAppPaymentsSample;
 				PROVISIONING_PROFILE_SPECIFIER = "";
