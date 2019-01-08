@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 9ef9bb6f238ae87b26bdf11bf21e8ba4f1a4cb82
+PODS:
+  - SquareInAppPaymentsSDK (1.0.1)
 
-COCOAPODS: 1.5.2
+DEPENDENCIES:
+  - SquareInAppPaymentsSDK (= 1.0.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SquareInAppPaymentsSDK
+
+SPEC CHECKSUMS:
+  SquareInAppPaymentsSDK: bb29701fe05e3119bf3ea003d266e9a233d7c7a6
+
+PODFILE CHECKSUM: 87d484e94b5042aad5751a94a0533a14cc78a657
+
+COCOAPODS: 1.5.3
