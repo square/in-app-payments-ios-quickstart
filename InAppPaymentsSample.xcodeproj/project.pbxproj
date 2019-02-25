@@ -284,7 +284,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-InAppPaymentsSample/Pods-InAppPaymentsSample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-InAppPaymentsSample/Pods-InAppPaymentsSample-frameworks.sh",
 				"${PODS_ROOT}/SquareInAppPaymentsSDK/SquareInAppPaymentsSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -295,7 +295,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InAppPaymentsSample/Pods-InAppPaymentsSample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InAppPaymentsSample/Pods-InAppPaymentsSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		72C92A10217E8E73006A02AF /* Install SquareInAppPayments */ = {
