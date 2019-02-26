@@ -22,6 +22,13 @@ xcuserdata/
 *.xccheckout
 *.xcscmblueprint
 
+#Ignore the Mac OS X .DS_Store files
+.DS_Store
+.LSOverride
+
+# Swap files
+*.swp
+
 ## Obj-C/Swift specific
 *.hmap
 *.ipa
