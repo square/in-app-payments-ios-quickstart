@@ -35,31 +35,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		066CF5345186C890120AA06E06A7E092 /* SquareInAppPaymentsSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SquareInAppPaymentsSDK.h; path = SquareInAppPaymentsSDK.framework/Headers/SquareInAppPaymentsSDK.h; sourceTree = "<group>"; };
-		0EFA53F43896B41A25B7397C84DBD96E /* SQIPCardBrand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQIPCardBrand.h; path = SquareInAppPaymentsSDK.framework/Headers/SQIPCardBrand.h; sourceTree = "<group>"; };
-		110BD7470DAB01297B413E750D82648B /* SquareInAppPaymentsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SquareInAppPaymentsSDK.framework; sourceTree = "<group>"; };
-		1394D67F9300AD99DDF127C998230CCD /* SQIPApplePayNonceRequestError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQIPApplePayNonceRequestError.h; path = SquareInAppPaymentsSDK.framework/Headers/SQIPApplePayNonceRequestError.h; sourceTree = "<group>"; };
-		376AA5C7C12D0B7EE3BEF91B6E3A69B3 /* SQIPInAppPaymentsSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQIPInAppPaymentsSDK.h; path = SquareInAppPaymentsSDK.framework/Headers/SQIPInAppPaymentsSDK.h; sourceTree = "<group>"; };
-		5CFFCAF62E44AA2537B52FE53A7ED6A5 /* SQIPTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQIPTheme.h; path = SquareInAppPaymentsSDK.framework/Headers/SQIPTheme.h; sourceTree = "<group>"; };
-		6219A239EFE80C66F58940382066F2D7 /* SQIPCard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQIPCard.h; path = SquareInAppPaymentsSDK.framework/Headers/SQIPCard.h; sourceTree = "<group>"; };
-		6BD91E3F06E13ADF569C37974488657E /* SQIPCardDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQIPCardDetails.h; path = SquareInAppPaymentsSDK.framework/Headers/SQIPCardDetails.h; sourceTree = "<group>"; };
+		08D0FB57130A4BE1F2BFED61A1BC6849 /* SQIPCardBrand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQIPCardBrand.h; path = SquareInAppPaymentsSDK.framework/Headers/SQIPCardBrand.h; sourceTree = "<group>"; };
+		1C661941458E0739E537811340517E17 /* SQIPCardEntryViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQIPCardEntryViewController.h; path = SquareInAppPaymentsSDK.framework/Headers/SQIPCardEntryViewController.h; sourceTree = "<group>"; };
+		2409BE4EA2D5EF6F8DA03D320BC1DAC5 /* SquareInAppPaymentsSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SquareInAppPaymentsSDK.xcconfig; sourceTree = "<group>"; };
+		2583EE5CFE9145B70E0D4A9733531AF8 /* SquareInAppPaymentsSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SquareInAppPaymentsSDK.h; path = SquareInAppPaymentsSDK.framework/Headers/SquareInAppPaymentsSDK.h; sourceTree = "<group>"; };
+		361365C9063AA91424A5970EA48EB380 /* SQIPCardDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQIPCardDetails.h; path = SquareInAppPaymentsSDK.framework/Headers/SQIPCardDetails.h; sourceTree = "<group>"; };
+		417E74AB6E6024CB1C2BB0CAC8979A83 /* SQIPApplePayNonceRequestError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQIPApplePayNonceRequestError.h; path = SquareInAppPaymentsSDK.framework/Headers/SQIPApplePayNonceRequestError.h; sourceTree = "<group>"; };
+		4789486EFF5582A06B28DB928020C5A0 /* PKPaymentRequest+Square.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PKPaymentRequest+Square.h"; path = "SquareInAppPaymentsSDK.framework/Headers/PKPaymentRequest+Square.h"; sourceTree = "<group>"; };
+		498FEC1637729BB1EBEA9895D12EBC73 /* SQIPErrorConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQIPErrorConstants.h; path = SquareInAppPaymentsSDK.framework/Headers/SQIPErrorConstants.h; sourceTree = "<group>"; };
+		4F586BB411F7518B07548BFFAAB655CE /* SQIPInAppPaymentsSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQIPInAppPaymentsSDK.h; path = SquareInAppPaymentsSDK.framework/Headers/SQIPInAppPaymentsSDK.h; sourceTree = "<group>"; };
+		6375DE1DF2E74367C3EC939E62F9BEF9 /* SQIPApplePayNonceRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQIPApplePayNonceRequest.h; path = SquareInAppPaymentsSDK.framework/Headers/SQIPApplePayNonceRequest.h; sourceTree = "<group>"; };
+		740AE7BF4F9CBD02CBCA3055DADC49D6 /* SquareInAppPaymentsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SquareInAppPaymentsSDK.framework; sourceTree = "<group>"; };
 		8172A4FF405F8927FED2D50D5E9EC411 /* Pods-InAppPaymentsSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InAppPaymentsSample-dummy.m"; sourceTree = "<group>"; };
 		9105301AACED71E04CC4EA94FA62171F /* Pods-InAppPaymentsSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InAppPaymentsSample.release.xcconfig"; sourceTree = "<group>"; };
 		9337A94BF104EF0EFA91EF4A4AAB97AB /* Pods-InAppPaymentsSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InAppPaymentsSample.modulemap"; sourceTree = "<group>"; };
+		99A85DAF8FB19C97F9585533C52FFF6A /* SQIPCard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQIPCard.h; path = SquareInAppPaymentsSDK.framework/Headers/SQIPCard.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3B1CE706EEE95FF92CD26E757FAE869 /* SQIPTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQIPTheme.h; path = SquareInAppPaymentsSDK.framework/Headers/SQIPTheme.h; sourceTree = "<group>"; };
+		A3EA8FB3CADC9C746A4067F1C7E1D288 /* SQIPCardType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQIPCardType.h; path = SquareInAppPaymentsSDK.framework/Headers/SQIPCardType.h; sourceTree = "<group>"; };
 		AE5A8471ABF6A686B4B580934587F2E8 /* Pods-InAppPaymentsSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InAppPaymentsSample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AF3D814E494CC6403954E8BD6CACD949 /* Pods-InAppPaymentsSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InAppPaymentsSample.debug.xcconfig"; sourceTree = "<group>"; };
 		B03CD9AA731A0EF421E05497DD353B47 /* Pods_InAppPaymentsSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_InAppPaymentsSample.framework; path = "Pods-InAppPaymentsSample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7304B797285234F57083C600F2B286C /* SquareInAppPaymentsSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SquareInAppPaymentsSDK.xcconfig; sourceTree = "<group>"; };
-		C3716B37722212A78C97E9C8459BFD3C /* SQIPErrorConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQIPErrorConstants.h; path = SquareInAppPaymentsSDK.framework/Headers/SQIPErrorConstants.h; sourceTree = "<group>"; };
-		C61C074E51FAF0E7EE4D2E839BD5ECE3 /* SQIPCardEntryViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQIPCardEntryViewController.h; path = SquareInAppPaymentsSDK.framework/Headers/SQIPCardEntryViewController.h; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E0A8F4B8173E41DCCE0BB1607E479586 /* PKPaymentRequest+Square.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PKPaymentRequest+Square.h"; path = "SquareInAppPaymentsSDK.framework/Headers/PKPaymentRequest+Square.h"; sourceTree = "<group>"; };
+		E14F062AB78C1259066AD324AA80BC17 /* SQIPCardPrepaidType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQIPCardPrepaidType.h; path = SquareInAppPaymentsSDK.framework/Headers/SQIPCardPrepaidType.h; sourceTree = "<group>"; };
 		E6B64D12CC4A62B53B9EE782DA13AC68 /* Pods-InAppPaymentsSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-InAppPaymentsSample-umbrella.h"; sourceTree = "<group>"; };
 		E7F66BAF8478A1C36F9FCD528D718480 /* Pods-InAppPaymentsSample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InAppPaymentsSample-Info.plist"; sourceTree = "<group>"; };
 		EE98DC4BA6FA3956D5C7074DF4EDDA10 /* Pods-InAppPaymentsSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InAppPaymentsSample-acknowledgements.plist"; sourceTree = "<group>"; };
 		F35C5DCEA8E07ED75EEF877750411195 /* Pods-InAppPaymentsSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InAppPaymentsSample-frameworks.sh"; sourceTree = "<group>"; };
-		F43139B2A992C0324BDDDDCD2C45711A /* SQIPApplePayNonceRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQIPApplePayNonceRequest.h; path = SquareInAppPaymentsSDK.framework/Headers/SQIPApplePayNonceRequest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,36 +76,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C83EB8751DC1263845C1E672AD7D89C /* SquareInAppPaymentsSDK */ = {
-			isa = PBXGroup;
-			children = (
-				E0A8F4B8173E41DCCE0BB1607E479586 /* PKPaymentRequest+Square.h */,
-				F43139B2A992C0324BDDDDCD2C45711A /* SQIPApplePayNonceRequest.h */,
-				1394D67F9300AD99DDF127C998230CCD /* SQIPApplePayNonceRequestError.h */,
-				6219A239EFE80C66F58940382066F2D7 /* SQIPCard.h */,
-				0EFA53F43896B41A25B7397C84DBD96E /* SQIPCardBrand.h */,
-				6BD91E3F06E13ADF569C37974488657E /* SQIPCardDetails.h */,
-				C61C074E51FAF0E7EE4D2E839BD5ECE3 /* SQIPCardEntryViewController.h */,
-				C3716B37722212A78C97E9C8459BFD3C /* SQIPErrorConstants.h */,
-				376AA5C7C12D0B7EE3BEF91B6E3A69B3 /* SQIPInAppPaymentsSDK.h */,
-				5CFFCAF62E44AA2537B52FE53A7ED6A5 /* SQIPTheme.h */,
-				066CF5345186C890120AA06E06A7E092 /* SquareInAppPaymentsSDK.h */,
-				15407FA43445A7E7236C67EB39D9CE28 /* Frameworks */,
-				0F499675FE801570162FF75DAF9CDCD1 /* Support Files */,
-			);
-			name = SquareInAppPaymentsSDK;
-			path = SquareInAppPaymentsSDK;
-			sourceTree = "<group>";
-		};
-		0F499675FE801570162FF75DAF9CDCD1 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B7304B797285234F57083C600F2B286C /* SquareInAppPaymentsSDK.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SquareInAppPaymentsSDK";
-			sourceTree = "<group>";
-		};
 		151F8F2253B9BB426CF9F2210881A3FF /* Pods-InAppPaymentsSample */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,10 +93,41 @@
 			path = "Target Support Files/Pods-InAppPaymentsSample";
 			sourceTree = "<group>";
 		};
-		15407FA43445A7E7236C67EB39D9CE28 /* Frameworks */ = {
+		437A3A30FE2FC2E5F1B2EADC70CF4EA2 /* SquareInAppPaymentsSDK */ = {
 			isa = PBXGroup;
 			children = (
-				110BD7470DAB01297B413E750D82648B /* SquareInAppPaymentsSDK.framework */,
+				4789486EFF5582A06B28DB928020C5A0 /* PKPaymentRequest+Square.h */,
+				6375DE1DF2E74367C3EC939E62F9BEF9 /* SQIPApplePayNonceRequest.h */,
+				417E74AB6E6024CB1C2BB0CAC8979A83 /* SQIPApplePayNonceRequestError.h */,
+				99A85DAF8FB19C97F9585533C52FFF6A /* SQIPCard.h */,
+				08D0FB57130A4BE1F2BFED61A1BC6849 /* SQIPCardBrand.h */,
+				361365C9063AA91424A5970EA48EB380 /* SQIPCardDetails.h */,
+				1C661941458E0739E537811340517E17 /* SQIPCardEntryViewController.h */,
+				E14F062AB78C1259066AD324AA80BC17 /* SQIPCardPrepaidType.h */,
+				A3EA8FB3CADC9C746A4067F1C7E1D288 /* SQIPCardType.h */,
+				498FEC1637729BB1EBEA9895D12EBC73 /* SQIPErrorConstants.h */,
+				4F586BB411F7518B07548BFFAAB655CE /* SQIPInAppPaymentsSDK.h */,
+				A3B1CE706EEE95FF92CD26E757FAE869 /* SQIPTheme.h */,
+				2583EE5CFE9145B70E0D4A9733531AF8 /* SquareInAppPaymentsSDK.h */,
+				8F1F84D0579D6FEAA8C756C36834BA4D /* Frameworks */,
+				B3105D6DC5B1628C333850158A41149F /* Support Files */,
+			);
+			name = SquareInAppPaymentsSDK;
+			path = SquareInAppPaymentsSDK;
+			sourceTree = "<group>";
+		};
+		5E979844DC614C44A4F3D3FBB593A5D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				437A3A30FE2FC2E5F1B2EADC70CF4EA2 /* SquareInAppPaymentsSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F1F84D0579D6FEAA8C756C36834BA4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				740AE7BF4F9CBD02CBCA3055DADC49D6 /* SquareInAppPaymentsSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,6 +138,15 @@
 				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		B3105D6DC5B1628C333850158A41149F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2409BE4EA2D5EF6F8DA03D320BC1DAC5 /* SquareInAppPaymentsSDK.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SquareInAppPaymentsSDK";
 			sourceTree = "<group>";
 		};
 		BA1DE086AC83F4F54EDFE3AD73A9B218 /* Products */ = {
@@ -150,7 +162,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				FDBABA94B23FE3E0429677E611B51315 /* Pods */,
+				5E979844DC614C44A4F3D3FBB593A5D8 /* Pods */,
 				BA1DE086AC83F4F54EDFE3AD73A9B218 /* Products */,
 				E768D76BB8AC4C592B3EF5FFCDA1102A /* Targets Support Files */,
 			);
@@ -170,14 +182,6 @@
 				151F8F2253B9BB426CF9F2210881A3FF /* Pods-InAppPaymentsSample */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		FDBABA94B23FE3E0429677E611B51315 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0C83EB8751DC1263845C1E672AD7D89C /* SquareInAppPaymentsSDK */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,7 +337,7 @@
 		};
 		306E8E5AB4E120CC2AC5D1B577101A8D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7304B797285234F57083C600F2B286C /* SquareInAppPaymentsSDK.xcconfig */;
+			baseConfigurationReference = 2409BE4EA2D5EF6F8DA03D320BC1DAC5 /* SquareInAppPaymentsSDK.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -480,7 +484,7 @@
 		};
 		EC3EB29627F4291840100A96BAD4820E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7304B797285234F57083C600F2B286C /* SquareInAppPaymentsSDK.xcconfig */;
+			baseConfigurationReference = 2409BE4EA2D5EF6F8DA03D320BC1DAC5 /* SquareInAppPaymentsSDK.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = NO;
