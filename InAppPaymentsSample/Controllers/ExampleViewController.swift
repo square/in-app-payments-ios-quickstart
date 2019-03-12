@@ -220,33 +220,35 @@ extension ExampleViewController: PKPaymentAuthorizationViewControllerDelegate {
         // Turn the response into a nonce, if possible
         // Nonce is used to actually charge the card on the server-side
         let nonceRequest = SQIPApplePayNonceRequest(payment: payment)
-        
-        
-        nonceRequest.perform { [weak self] result, error in
-            guard let result = result else {
-                let errors = error.map({ [$0] }) ?? []
+
+        nonceRequest.perform { [weak self] cardDetails, error in
+            guard let cardDetails = cardDetails else {
+                let errors = [error].compactMap { $0 }
                 completion(PKPaymentAuthorizationResult(status: .failure, errors: errors))
                 return
             }
             
             guard let strongSelf = self else {
+                completion(PKPaymentAuthorizationResult(status: .failure, errors: []))
                 return
             }
             
             guard strongSelf.serverHostSet else {
-                strongSelf.printCurlCommand(nonce: result.nonce)
+                strongSelf.printCurlCommand(nonce: cardDetails.nonce)
                 strongSelf.applePayResult = .success
+                completion(PKPaymentAuthorizationResult(status: .failure, errors: []))
                 return
             }
             
-            ChargeApi.processPayment(result.nonce) { (transactionId, error) in
+            ChargeApi.processPayment(cardDetails.nonce) { (transactionId, error) in
                 if let error = error, !error.isEmpty {
                     strongSelf.applePayResult = Result.failure(error)
                 } else {
                     strongSelf.applePayResult = Result.success
                 }
+
+                completion(PKPaymentAuthorizationResult(status: .success, errors: nil))
             }
-            completion(PKPaymentAuthorizationResult(status: .success, errors: nil))
         }
     }
 
