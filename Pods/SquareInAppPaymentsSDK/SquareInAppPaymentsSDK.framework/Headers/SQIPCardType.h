@@ -20,7 +20,6 @@
 
 /**
 Indicates a card's type. Such as Credit
-:nodoc:
 */
 typedef NS_ENUM(NSUInteger, SQIPCardType) {
     /** Unidentified type */

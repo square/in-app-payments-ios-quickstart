@@ -51,14 +51,12 @@
 @property (nonatomic, strong, readonly, nullable) NSString *postalCode;
 
 /**
- :nodoc:
  The type of card (for example, Credit or Debit)
  Note: This property is experimental and will always return `unknown`
  */
 @property (nonatomic, assign, readonly) SQIPCardType type;
 
 /**
- :nodoc:
  The prepaid type of the credit card (for example, a Prepaid Gift Card)
  Note: This property is experimental and will always return `unknown`
  */

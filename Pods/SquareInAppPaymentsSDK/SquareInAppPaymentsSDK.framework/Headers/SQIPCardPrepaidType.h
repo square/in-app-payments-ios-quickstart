@@ -21,7 +21,6 @@
 
 /**
  Indicates if a card is prepaid.
- :nodoc:
  */
 typedef NS_ENUM(NSUInteger, SQIPCardPrepaidType) {
     /** Unable to determine whether the card is prepaid or not. */
