@@ -15,7 +15,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <SquareInAppPaymentsSDK/SQIPErrorConstants.h>
 
 
 /**
@@ -26,7 +25,7 @@ extern NSString *_Nonnull const SQIPApplePayNonceRequestErrorDomain;
 /**
  Possible error codes that can be returned as a result of attempting to create a card nonce.
  */
-SQIP_ERROR_ENUM(SQIPApplePayNonceRequestErrorDomain, SQIPApplePayNonceRequestError){
+typedef NS_ERROR_ENUM(SQIPApplePayNonceRequestErrorDomain, SQIPApplePayNonceRequestError){
 
     /**
      Square In-App Payments SDK could not connect to the network.

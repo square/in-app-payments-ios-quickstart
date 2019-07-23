@@ -19,7 +19,7 @@
 #import <Foundation/Foundation.h>
 
 /** Indicates a card's brand, such as Visa. */
-typedef NS_ENUM(NSUInteger, SQIPCardBrand) {
+typedef NS_CLOSED_ENUM(NSUInteger, SQIPCardBrand) {
 
     /** An unidentified brand */
     SQIPCardBrandOtherBrand = 0,

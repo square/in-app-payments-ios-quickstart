@@ -36,12 +36,12 @@
  :nodoc:
  `init` is unavailable.
  */
-- (instancetype)init NS_UNAVAILABLE;
+- (nonnull instancetype)init NS_UNAVAILABLE;
 
 /**
  :nodoc:
  `new` is unavailable.
  */
-+ (instancetype) new NS_UNAVAILABLE;
++ (nonnull instancetype) new NS_UNAVAILABLE;
 
 @end

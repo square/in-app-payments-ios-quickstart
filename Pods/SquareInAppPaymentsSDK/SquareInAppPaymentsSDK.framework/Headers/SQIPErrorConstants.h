@@ -26,7 +26,3 @@ extern NSString *_Nonnull const SQIPErrorDebugCodeKey;
  Debug messages should not be displayed to customers.
  */
 extern NSString *_Nonnull const SQIPErrorDebugMessageKey;
-
-#define SQIP_ERROR_ENUM(_domain, _name)   \
-    typedef enum _name : NSInteger _name; \
-    enum __attribute__((ns_error_domain(_domain))) _name : NSInteger
