@@ -52,12 +52,12 @@ typedef void (^SQIPApplePayNonceRequestCompletionHandler)(SQIPCardDetails *_Null
  :nodoc:
  `init` is unavailable. Use `-[SQIPApplePayNonceRequest initWithPayment:]` instead.
  */
-- (instancetype)init NS_UNAVAILABLE;
+- (nonnull instancetype)init NS_UNAVAILABLE;
 
 /**
  :nodoc:
  `new` is unavailable. Use `-[SQIPApplePayNonceRequest initWithPayment:]` instead.
  */
-+ (instancetype) new NS_UNAVAILABLE;
++ (nonnull instancetype) new NS_UNAVAILABLE;
 
 @end

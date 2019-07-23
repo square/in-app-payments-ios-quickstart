@@ -24,7 +24,7 @@
 /**
  Indicates the result of card entry.
  */
-typedef NS_ENUM(NSUInteger, SQIPCardEntryCompletionStatus) {
+typedef NS_CLOSED_ENUM(NSUInteger, SQIPCardEntryCompletionStatus){
 
     /** Card entry was canceled by the customer. */
     SQIPCardEntryCompletionStatusCanceled = 0,
@@ -102,13 +102,13 @@ typedef NS_ENUM(NSUInteger, SQIPCardEntryCompletionStatus) {
  :nodoc:
  `initWithNibName:bundle:` is unavailable. Use `-[SQIPCardEntryViewController initWithTheme:]` instead.
  */
-- (nonnull instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil NS_UNAVAILABLE;
+- (nonnull instancetype)initWithNibName:(nullable NSString *)nibNameOrNil bundle:(nullable NSBundle *)nibBundleOrNil NS_UNAVAILABLE;
 
 /**
  :nodoc:
  `initWithCoder:` is unavailable. Use `-[SQIPCardEntryViewController initWithTheme:]` instead.
  */
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(nonnull NSCoder *)aDecoder NS_UNAVAILABLE;
 
 /**
  :nodoc:
