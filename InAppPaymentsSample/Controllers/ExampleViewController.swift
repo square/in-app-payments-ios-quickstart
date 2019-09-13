@@ -47,18 +47,21 @@ class ExampleViewController: UIViewController {
         present(nc, animated: true, completion: nil)
     }
     
+    
     private func printCurlCommand(nonce : String) {
         let uuid = UUID().uuidString
-        print("curl --request POST https://connect.squareup.com/v2/locations/SQUARE_LOCATION_ID/transactions \\" +
+        print("curl --request POST https://connect.squareup.com/v2/payments \\" +
             "--header \"Content-Type: application/json\" \\" +
             "--header \"Authorization: Bearer YOUR_ACCESS_TOKEN\" \\" +
             "--header \"Accept: application/json\" \\" +
             "--data \'{" +
             "\"idempotency_key\": \"\(uuid)\"," +
+            "\"autocomplete\": true," +
             "\"amount_money\": {" +
             "\"amount\": 100," +
             "\"currency\": \"USD\"}," +
-            "\"card_nonce\": \"\(nonce)\"" +
+            "\"source_id\": \"\(nonce)\"" +
+            "\"location_id\": \"\(Constants.Square.SQUARE_LOCATION_ID)\"" +
             "}\'");
     }
     
