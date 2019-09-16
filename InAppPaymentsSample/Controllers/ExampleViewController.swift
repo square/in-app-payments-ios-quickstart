@@ -61,7 +61,6 @@ class ExampleViewController: UIViewController {
             "\"amount\": 100," +
             "\"currency\": \"USD\"}," +
             "\"source_id\": \"\(nonce)\"" +
-            "\"location_id\": \"\(Constants.Square.SQUARE_LOCATION_ID)\"" +
             "}\'");
     }
     
