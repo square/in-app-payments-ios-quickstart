@@ -50,7 +50,7 @@ class ExampleViewController: UIViewController {
     
     private func printCurlCommand(nonce : String) {
         let uuid = UUID().uuidString
-        print("curl --request POST https://connect.squareup.com/v2/payments \\" +
+        print("curl --request POST https://connect.squareupsandbox.com/v2/payments \\" +
             "--header \"Content-Type: application/json\" \\" +
             "--header \"Authorization: Bearer YOUR_ACCESS_TOKEN\" \\" +
             "--header \"Accept: application/json\" \\" +
