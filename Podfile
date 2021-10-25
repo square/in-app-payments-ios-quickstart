@@ -1,7 +1,7 @@
-platform :ios, '10.0'
+platform :ios, '12.0'
 
 target 'InAppPaymentsSample' do
   use_frameworks!
 
-  pod 'SquareInAppPaymentsSDK', '1.2.0'
+  pod 'SquareInAppPaymentsSDK', '1.5.3'
 end

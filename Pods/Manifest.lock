@@ -1,16 +1,16 @@
 PODS:
-  - SquareInAppPaymentsSDK (1.2.0)
+  - SquareInAppPaymentsSDK (1.5.3)
 
 DEPENDENCIES:
-  - SquareInAppPaymentsSDK (= 1.2.0)
+  - SquareInAppPaymentsSDK (= 1.5.3)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - SquareInAppPaymentsSDK
 
 SPEC CHECKSUMS:
-  SquareInAppPaymentsSDK: 4cd8143cfb21f2050cc6252596a1b8c910ad2fb9
+  SquareInAppPaymentsSDK: eb6aa6eac1ab3e030f361b9c894961b4fa528140
 
-PODFILE CHECKSUM: e34e934c75c8de2fd3e352287f3b5ac9e9676663
+PODFILE CHECKSUM: 01b2aa910a871b942ba66e2156c34a1aad2d1bb9
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.11.2
