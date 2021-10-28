@@ -43,31 +43,51 @@
 		</dict>
 		<key>Headers/PKPaymentRequest+Square.h</key>
 		<data>
-		L9aPfrYrYtstFH1NKKPo6xTypE4=
+		5dqhLS4UgVHCkqjVcPcOd0nfJtw=
 		</data>
 		<key>Headers/SQIPApplePayNonceRequest.h</key>
 		<data>
-		oM81HEMn6hQ1MQ8GjuZ3v0Raceo=
+		URRdBBHg1hnG3fxOS4BhOziOhv8=
 		</data>
 		<key>Headers/SQIPApplePayNonceRequestError.h</key>
 		<data>
-		BIqLBD4Ew0T7Cag/royyKSdjtVQ=
+		ceNr9G3BEWTjlQ4ZOCUJY1aPCjI=
+		</data>
+		<key>Headers/SQIPCard.h</key>
+		<data>
+		QXfXEH9j/FP15PM61fCGgHBCtoQ=
+		</data>
+		<key>Headers/SQIPCardBrand.h</key>
+		<data>
+		TAPBSjrTAAklqzfNH3hEclrmeS0=
+		</data>
+		<key>Headers/SQIPCardDetails.h</key>
+		<data>
+		4i451eeV2lwJ/TMVIVivo25/SUw=
 		</data>
 		<key>Headers/SQIPCardEntryViewController.h</key>
 		<data>
-		55Ch1Kfc/2IBIiuYrlqnCdlOjZk=
+		WYenKB8o8ShxR9UTqZnb1UyFZYw=
+		</data>
+		<key>Headers/SQIPCardPrepaidType.h</key>
+		<data>
+		iLl1gJg4wviJFQCYXvrlP3qr+Bo=
+		</data>
+		<key>Headers/SQIPCardType.h</key>
+		<data>
+		8lVMcOPL7QtoDwsQyrOrz4mEG+E=
 		</data>
 		<key>Headers/SQIPErrorConstants.h</key>
 		<data>
-		22Y55XImsq5qoajYnA9s3J7OXlo=
+		QYFn2OSsUoYPZq7bnlPah7ezArQ=
 		</data>
 		<key>Headers/SQIPInAppPaymentsSDK.h</key>
 		<data>
-		GHIcVuqV+qg/AeXS9NM5FTzyQqs=
+		b6SQkTzXUrgQgZ8caaZrVsdGUwo=
 		</data>
 		<key>Headers/SQIPSecureRemoteCommerce.h</key>
 		<data>
-		HSY7+wgSOClcJtIUC9T+C8l/gng=
+		9UPwBne3Vzze33/CuKWirenQeAE=
 		</data>
 		<key>Headers/SQIPSecureRemoteCommerceParameters.h</key>
 		<data>
@@ -75,15 +95,15 @@
 		</data>
 		<key>Headers/SQIPTheme.h</key>
 		<data>
-		pyEuSYF9ZlR2VbOfEMbaLefoa1k=
+		zRyfsSMeAkBDkEtZTZHwhJm5iVY=
 		</data>
 		<key>Headers/SquareInAppPaymentsSDK-umbrella.h</key>
 		<data>
-		JOvYIyQKwBSljuLndUEGxwpwKq0=
+		KuC1N8k+G9KbKnelYqeWH/aMp1I=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RBwpFcugZcBZ4syLqa2ffRfzyBo=
+		Hjv8xW5Vn2bkZ7KPCj1VLRKBke0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -548,49 +568,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y+13X8Dnf4g43pS0Ly3wol4GROgFPwrG+lvMB4oWAjM=
+			uVJ3IKZK9m7BM4Q410SqK5JlXgI4SPpfhYQQInT6T58=
 			</data>
 		</dict>
 		<key>Headers/SQIPApplePayNonceRequest.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			heoW+jix9n1yRgXf6J6um3tDerWGnTPGji3C9ugw96w=
+			lkUzYwNgPJRDaIY0zCmPuLdF6QRD1RENbhknkQUDjOU=
 			</data>
 		</dict>
 		<key>Headers/SQIPApplePayNonceRequestError.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6+SiIktVloSxiKpdWlLg5VYh7icocq6sRR3v639bB8o=
+			fzAT0NMyUKGfdA6+Z4X5HULWx+16EErxWIY35UTMCjY=
+			</data>
+		</dict>
+		<key>Headers/SQIPCard.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RkuY455+wNIGRaR+J3V8yknT6NYw7gSsEfWsJttbeq4=
+			</data>
+		</dict>
+		<key>Headers/SQIPCardBrand.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nTIqmSnd6miA6y/GGvqSPE7EMoQC6LuPF2ZWZ3w9UYg=
+			</data>
+		</dict>
+		<key>Headers/SQIPCardDetails.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7j8u9pDXHdPA8itnixWormLs0TCp13Vs6V539TiHb/g=
 			</data>
 		</dict>
 		<key>Headers/SQIPCardEntryViewController.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wP1ULl72g6RuKhL0ZAlejRJ3RV3uusWU09AQa7svilY=
+			ch8HxXI7ad+pKfdkv9dlL8psdKN2saYVJJY4s2/T+W4=
+			</data>
+		</dict>
+		<key>Headers/SQIPCardPrepaidType.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			B5Aatfw+BmDctuTpIbTuSJ07K+8WpTk8EaPDX34QfTo=
+			</data>
+		</dict>
+		<key>Headers/SQIPCardType.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+nBNa+nryzo8x/z5DG5ghrQjMwkEgDBG9jGPFAUURfw=
 			</data>
 		</dict>
 		<key>Headers/SQIPErrorConstants.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yIzFqT4TFnCaKyW2qc4kkCdNMfiP9SzGj5UChli4IZ4=
+			iVOl0lKXzESc4CzC2mqRio5yKN8WzDT9VRlH9vV8T80=
 			</data>
 		</dict>
 		<key>Headers/SQIPInAppPaymentsSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QwpFjmIgAkr+ODzpf98So4FRpjhEhAc9Nbro0btUFN4=
+			1Qw+OOJXhsQac2zcoj7OkpLFkzQu289cVKmr/G/x51k=
 			</data>
 		</dict>
 		<key>Headers/SQIPSecureRemoteCommerce.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LRcTvlBUfb+UmpDYzEzakwmHf0KUHQwl89VlSksfTCs=
+			6SSq+dBbq6+gFcoWLsYK84G1dGlFo600ZPUrZK/huZ8=
 			</data>
 		</dict>
 		<key>Headers/SQIPSecureRemoteCommerceParameters.h</key>
@@ -604,14 +659,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kmosq0akIDhy4ghM3ZQ/bESu5LHbk0AyqbckJuU+PIg=
+			3Q++ZwxiqmPedlsfjjoFhRb/jpCIfqBNaqeY1mayy1s=
 			</data>
 		</dict>
 		<key>Headers/SquareInAppPaymentsSDK-umbrella.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cKRon8YxfOoy++T5zxuWRCWPrsEf1578XUQlmQ4G28Q=
+			GM6HHEQho1NSbopKigun4asbNxIlw1hgDzszl9F8AOg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

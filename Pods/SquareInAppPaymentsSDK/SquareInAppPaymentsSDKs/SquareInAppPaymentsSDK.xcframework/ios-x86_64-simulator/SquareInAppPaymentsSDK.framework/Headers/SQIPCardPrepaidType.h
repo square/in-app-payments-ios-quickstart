@@ -1,3 +1,5 @@
+// MARK: Formatter Exempt
+
 //
 //    Copyright (c) 2019-present, Square, Inc. All rights reserved.
 //
@@ -14,15 +16,31 @@
 //    THE SOFTWARE.
 //
 
+
 #import <Foundation/Foundation.h>
 
 /**
- The `NSError` `userInfo` key used to retrieve a detailed debug code string for the error that occurred.
+ Indicates if a card is prepaid.
  */
-extern NSString *_Nonnull const SQIPErrorDebugCodeKey;
+typedef NS_ENUM(NSUInteger, SQIPCardPrepaidType) {
+    /** Unable to determine whether the card is prepaid or not. */
+    SQIPCardPrepaidTypeUnknown,
+
+    /** Card that is not prepaid */
+    SQIPCardPrepaidTypeNotPrepaid,
+
+    /** Prepaid card */
+    SQIPCardPrepaidTypePrepaid,
+};
 
 /**
- The `NSError` `userInfo` key used to retrieve a human-readable message containing additional debug information related to the possible cause of the error.
- Debug messages should not be displayed to customers.
+ Creates a SQIPCardPrepaidType from a string. i.e. "PREPAID" -> SQIPCardPrepaidTypePrepaid.
+ :nodoc:
  */
-extern NSString *_Nonnull const SQIPErrorDebugMessageKey;
+extern SQIPCardPrepaidType SQIPCardPrepaidTypeFromString(NSString *_Nullable prepaidType) CF_SWIFT_NAME(SQIPCardPrepaidType.init(_:));
+
+/**
+ Creates a string from a SQIPCardPrepaidType. i.e. SQIPCardPrepaidTypePrepaid -> "PREPAID".
+ :nodoc:
+ */
+extern NSString *_Nonnull NSStringFromSQIPCardPrepaidType(SQIPCardPrepaidType prepaidType) CF_SWIFT_NAME(getter:SQIPCardPrepaidType.description(self:));

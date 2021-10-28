@@ -14,12 +14,12 @@
 //    THE SOFTWARE.
 //
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 @class SQIPCardDetails;
 @class SQIPCardEntryViewController;
+@class SQIPTheme;
 
-#import "SQIPTheme.h"
 
 /**
  Indicates the result of card entry.
@@ -40,11 +40,11 @@ typedef NS_CLOSED_ENUM(NSUInteger, SQIPCardEntryCompletionStatus) {
 
 /**
  Invoked after the customer has submitted their card information. Your implementation should send the provided card details to your server to perform any additional work (for example, charging the card). After you are finished processing the card, notify the card entry view controller of the result so it can be displayed to the customer.
-
+ 
  If your server successfully processed the card, call the completion handler with `nil` as the only argument. A success animation will be displayed to the customer, and `cardEntryViewController:didCompleteWithStatus:` will be called, at which point you should dismiss the card entry view controller.
-
+ 
  If your application encountered an error while processing the card, call the completion handler with the error. Its `localizedDescription` will be displayed to the customer in the card entry view controller. The customer will have an opportunity to edit their card information and re-submit.
-
+ 
  @param cardEntryViewController The SQIPCardEntryViewController instance.
  @param cardDetails Details about the entered card, including the nonce.
  @param completionHandler The completion handler to be called once you have finished processing the card.
@@ -56,7 +56,7 @@ typedef NS_CLOSED_ENUM(NSUInteger, SQIPCardEntryCompletionStatus) {
 /**
  Invoked when the card entry form has been completed. The `status` parameter indicates whether card entry succeeded or was cancelled.
  Use this method to dismiss the card entry view controller and update any other app state.
-
+ 
  @param cardEntryViewController The SQIPCardEntryViewController instance.
  @param status The card entry completion status.
 
@@ -73,7 +73,7 @@ typedef NS_CLOSED_ENUM(NSUInteger, SQIPCardEntryCompletionStatus) {
 
 /**
  Creates a new card entry view controller.
-
+ 
  @param theme The theme instance used to style the card entry view controller.
  */
 - (nonnull instancetype)initWithTheme:(nonnull SQIPTheme *)theme;
@@ -93,9 +93,9 @@ Creates a new card entry view controller.
 
 /**
  Indicates that the customer must enter the postal code associated with their payment card. When false, the postal code field will not be displayed.
-
+ 
  Defaults to `true`.
-
+ 
  @note Postal code collection is required for processing payments for Square accounts based in the United States, Canada, and United Kingdom. Disabling postal code collection in those regions will result in all credit card payments being declined.
  */
 @property (nonatomic, assign) BOOL collectPostalCode;

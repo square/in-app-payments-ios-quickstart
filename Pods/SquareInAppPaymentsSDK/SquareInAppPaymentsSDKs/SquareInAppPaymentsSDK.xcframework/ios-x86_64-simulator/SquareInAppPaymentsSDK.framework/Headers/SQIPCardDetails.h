@@ -16,13 +16,33 @@
 
 #import <Foundation/Foundation.h>
 
-/**
- The `NSError` `userInfo` key used to retrieve a detailed debug code string for the error that occurred.
- */
-extern NSString *_Nonnull const SQIPErrorDebugCodeKey;
+@class SQIPCard;
 
 /**
- The `NSError` `userInfo` key used to retrieve a human-readable message containing additional debug information related to the possible cause of the error.
- Debug messages should not be displayed to customers.
+ Represents the result of a successful operation to process card payment information.
  */
-extern NSString *_Nonnull const SQIPErrorDebugMessageKey;
+@interface SQIPCardDetails : NSObject
+
+/**
+ A one-time-use payment token that is used with the Payments API to [charge the card](https://developer.squareup.com/reference/square/payments-api/create-payment) or the Customers API to [store the Card on File](https://developer.squareup.com/reference/square/customers-api/create-customer-card).
+ */
+@property (nonatomic, strong, readonly, nonnull) NSString *nonce;
+
+/**
+ The payment card.
+ */
+@property (nonatomic, strong, readonly, nonnull) SQIPCard *card;
+
+/**
+ :nodoc:
+ `init` is unavailable.
+ */
+- (nonnull instancetype)init NS_UNAVAILABLE;
+
+/**
+ :nodoc:
+ `new` is unavailable.
+ */
++ (nonnull instancetype) new NS_UNAVAILABLE;
+
+@end

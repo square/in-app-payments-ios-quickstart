@@ -14,7 +14,7 @@
 //    THE SOFTWARE.
 //
 
-@import PassKit;
+#import <PassKit/PassKit.h>
 
 /**
  PKPaymentRequest additions for using Apple Pay with Square.
@@ -23,7 +23,7 @@
 
 /**
  Creates a PKPaymentRequest instance with Square-supported networks and merchant capabilities.
-
+ 
  @param merchantIdentifier Your merchant identifier. This must be one of the Merchant IDs associated with your Apple Developer account.
  @param countryCode The two-letter ISO 3166 country code for the country where the payment will be processed. E.g. "US".
  @param currencyCode The three-letter ISO 4217 currency code. E.g. "USD".

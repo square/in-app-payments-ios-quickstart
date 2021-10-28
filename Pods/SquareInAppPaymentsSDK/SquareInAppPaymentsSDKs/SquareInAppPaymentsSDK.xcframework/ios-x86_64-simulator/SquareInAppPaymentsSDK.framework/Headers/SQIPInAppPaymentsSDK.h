@@ -14,7 +14,7 @@
 //    THE SOFTWARE.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
 /**
  Manages configuration of the Square In-App Payments SDK.

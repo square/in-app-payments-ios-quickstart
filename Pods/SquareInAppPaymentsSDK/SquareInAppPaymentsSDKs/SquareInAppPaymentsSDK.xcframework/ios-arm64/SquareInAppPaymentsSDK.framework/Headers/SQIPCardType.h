@@ -1,3 +1,5 @@
+// MARK: Formatter Exempt
+
 //
 //    Copyright (c) 2019-present, Square, Inc. All rights reserved.
 //
@@ -17,12 +19,27 @@
 #import <Foundation/Foundation.h>
 
 /**
- The `NSError` `userInfo` key used to retrieve a detailed debug code string for the error that occurred.
- */
-extern NSString *_Nonnull const SQIPErrorDebugCodeKey;
+Indicates a card's type. Such as Credit
+*/
+typedef NS_ENUM(NSUInteger, SQIPCardType) {
+    /** Unidentified type */
+    SQIPCardTypeUnknown,
+
+    /** Credit Card */
+    SQIPCardTypeCredit,
+
+    /** Debit Card */
+    SQIPCardTypeDebit,
+};
 
 /**
- The `NSError` `userInfo` key used to retrieve a human-readable message containing additional debug information related to the possible cause of the error.
- Debug messages should not be displayed to customers.
+ Creates a SQIPCardType from a string. i.e. "CREDIT" -> SQIPCardTypeCredit.
+ :nodoc:
  */
-extern NSString *_Nonnull const SQIPErrorDebugMessageKey;
+extern SQIPCardType SQIPCardTypeFromString(NSString *_Nullable type) CF_SWIFT_NAME(SQIPCardType.init(_:));
+
+/**
+ Creates a string from an SQIPCardType. i.e. SQIPCardTypeCredit -> "CREDIT".
+ :nodoc:
+ */
+extern NSString *_Nonnull NSStringFromSQIPCardType(SQIPCardType cardType) CF_SWIFT_NAME(getter:SQIPCardType.description(self:));

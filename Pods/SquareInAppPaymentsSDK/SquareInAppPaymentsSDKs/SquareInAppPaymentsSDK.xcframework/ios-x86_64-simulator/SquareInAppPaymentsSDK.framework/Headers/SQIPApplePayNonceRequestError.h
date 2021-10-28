@@ -14,7 +14,8 @@
 //    THE SOFTWARE.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
+
 
 /**
  The domain for errors that occur when requesting a card nonce using Apple Pay.

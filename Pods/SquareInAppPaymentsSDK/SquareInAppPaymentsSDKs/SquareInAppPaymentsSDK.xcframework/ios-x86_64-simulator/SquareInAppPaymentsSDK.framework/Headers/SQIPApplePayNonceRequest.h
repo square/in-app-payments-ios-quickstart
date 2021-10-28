@@ -14,8 +14,7 @@
 //    THE SOFTWARE.
 //
 
-@import Foundation;
-@import SQIPCore;
+#import <Foundation/Foundation.h>
 
 @class PKPayment;
 @class SQIPCardDetails;
@@ -24,7 +23,7 @@
  A completion handler that handles the result of an Apple Pay nonce request.
  @param cardDetails Contains details about the card, including the nonce. `nil` when the request fails.
  @param error An error with domain `SQIPApplePayNonceRequestErrorDomain` when the nonce request fails; otherwise, `nil`.
-
+ 
  @see `SQIPApplePayNonceRequestError` for possible error types.
  */
 typedef void (^SQIPApplePayNonceRequestCompletionHandler)(SQIPCardDetails *_Nullable cardDetails, NSError *_Nullable error);
@@ -37,14 +36,14 @@ typedef void (^SQIPApplePayNonceRequestCompletionHandler)(SQIPCardDetails *_Null
 
 /**
  Creates a new Apple Pay nonce request.
-
+ 
  @param payment The PKPayment that should be used to request a nonce.
  */
 - (nonnull instancetype)initWithPayment:(nonnull PKPayment *)payment;
 
 /**
  Performs the request to retrieve a card nonce.
-
+ 
  @param completionHandler The completion handler to be called upon success or failure of the nonce request.
  */
 - (void)performWithCompletionHandler:(nonnull SQIPApplePayNonceRequestCompletionHandler)completionHandler;
