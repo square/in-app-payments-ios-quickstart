@@ -11,7 +11,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = ABF6BFBB5B7645E64AE2B1149289D5C1 /* Build configuration list for PBXAggregateTarget "SquareInAppPaymentsSDK" */;
 			buildPhases = (
-				D2D90AE423E05003B6489F578DD1893C /* [CP] Copy XCFrameworks */,
+				D0C447C620E0F9DFD8117D4D5C3164D0 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 			);
@@ -39,11 +39,11 @@
 		12FF93116AAC6B43A4118B5D32650CB6 /* Pods-InAppPaymentsSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InAppPaymentsSample.debug.xcconfig"; sourceTree = "<group>"; };
 		1B7F378ED93B3F568EF7A598AC83A287 /* Pods-InAppPaymentsSample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-InAppPaymentsSample"; path = Pods_InAppPaymentsSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48680427A126C3A627FACEFE318D5AC3 /* Pods-InAppPaymentsSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InAppPaymentsSample.modulemap"; sourceTree = "<group>"; };
-		4F4F73D7F1F54CCA9408D37E54A4F5A8 /* SquareInAppPaymentsSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = SquareInAppPaymentsSDK.xcframework; path = SquareInAppPaymentsSDKs/SquareInAppPaymentsSDK.xcframework; sourceTree = "<group>"; };
 		517FD5C926564C4F072BA85D04060439 /* Pods-InAppPaymentsSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InAppPaymentsSample-acknowledgements.plist"; sourceTree = "<group>"; };
 		5BF84FAEF0630CEFB091D7BA5298D97A /* Pods-InAppPaymentsSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InAppPaymentsSample.release.xcconfig"; sourceTree = "<group>"; };
 		5FA4BC6A575349C6CE8CA88DA6DEFA22 /* Pods-InAppPaymentsSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InAppPaymentsSample-frameworks.sh"; sourceTree = "<group>"; };
 		63BB51F906464C1B02333C394CFD308B /* SquareInAppPaymentsSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SquareInAppPaymentsSDK.release.xcconfig; sourceTree = "<group>"; };
+		717CDDADB2580010D96560D396A9C671 /* SquareInAppPaymentsSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = SquareInAppPaymentsSDK.xcframework; path = XCFrameworks/SquareInAppPaymentsSDK.xcframework; sourceTree = "<group>"; };
 		71948BC5AB81029132CA4281A70AF119 /* SquareInAppPaymentsSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SquareInAppPaymentsSDK.debug.xcconfig; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		75C6CAF7BE43EF37BC3FC562E7FD91DC /* Pods-InAppPaymentsSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InAppPaymentsSample-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -83,10 +83,10 @@
 			path = "Target Support Files/Pods-InAppPaymentsSample";
 			sourceTree = "<group>";
 		};
-		4D130AE9E6432DF9A90EDA6D0B268EBA /* Frameworks */ = {
+		1AED7D8F15EC701E81CD5FDA8F07E309 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4F4F73D7F1F54CCA9408D37E54A4F5A8 /* SquareInAppPaymentsSDK.xcframework */,
+				717CDDADB2580010D96560D396A9C671 /* SquareInAppPaymentsSDK.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,7 +121,7 @@
 		B3FAB5F1DF73DEE39EE2E06F927913AB /* SquareInAppPaymentsSDK */ = {
 			isa = PBXGroup;
 			children = (
-				4D130AE9E6432DF9A90EDA6D0B268EBA /* Frameworks */,
+				1AED7D8F15EC701E81CD5FDA8F07E309 /* Frameworks */,
 				A01D90189652ABAB9BDECC54AFE7ECB3 /* Support Files */,
 			);
 			name = SquareInAppPaymentsSDK;
@@ -235,14 +235,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D2D90AE423E05003B6489F578DD1893C /* [CP] Copy XCFrameworks */ = {
+		D0C447C620E0F9DFD8117D4D5C3164D0 /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/SquareInAppPaymentsSDK/SquareInAppPaymentsSDK-xcframeworks.sh",
-				"${PODS_ROOT}/SquareInAppPaymentsSDK/SquareInAppPaymentsSDKs/SquareInAppPaymentsSDK.xcframework",
+				"${PODS_ROOT}/SquareInAppPaymentsSDK/XCFrameworks/SquareInAppPaymentsSDK.xcframework",
 			);
 			name = "[CP] Copy XCFrameworks";
 			outputPaths = (
