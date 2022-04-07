@@ -24,8 +24,8 @@ struct Constants {
     }
 
     struct Square {
-        static let SQUARE_LOCATION_ID: String = "<# REPLACE_ME #>"
-        static let APPLICATION_ID: String  = "<# REPLACE_ME #>"
+        static let SQUARE_LOCATION_ID: String = "REPLACE_ME"
+        static let APPLICATION_ID: String  = "REPLACE_ME"
         static let CHARGE_SERVER_HOST: String = "REPLACE_ME"
         static let CHARGE_URL: String = "\(CHARGE_SERVER_HOST)/chargeForCookie"
     }
