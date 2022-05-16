@@ -5,5 +5,5 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'InAppPaymentsSample' do
   use_frameworks!
 
-  pod 'SquareInAppPaymentsSDK', '1.5.5'
+  pod 'SquareInAppPaymentsSDK', '1.5.6'
 end
