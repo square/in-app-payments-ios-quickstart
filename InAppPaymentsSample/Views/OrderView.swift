@@ -28,23 +28,24 @@ class OrderView : UIView {
     }()
 
     lazy var addCardButton = ActionButton(backgroundColor: Color.primaryAction, title: "Pay with card", image: nil)
+    lazy var verifyBuyerButton = ActionButton(backgroundColor: Color.primaryAction, title: "Buyer Verification", image: nil)
     lazy var applePayButton = ActionButton(backgroundColor: Color.applePayBackground, title: nil, image: #imageLiteral(resourceName: "ApplePay"))
     private lazy var headerView = HeaderView(title: "Place your order")
 
     var closeButton: UIButton {
         return headerView.closeButton
     }
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
     }
-    
+
     private func commonInit() {
         backgroundColor = Color.popupBackground
 
@@ -59,6 +60,7 @@ class OrderView : UIView {
         payStackView.spacing = 12
         payStackView.distribution = .fillEqually
         payStackView.addArrangedSubview(addCardButton)
+        payStackView.addArrangedSubview(verifyBuyerButton)
         payStackView.addArrangedSubview(applePayButton)
         stackView.addArrangedSubview(payStackView)
 

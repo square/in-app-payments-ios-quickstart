@@ -16,6 +16,7 @@
 
 import UIKit
 import SquareInAppPaymentsSDK
+import SquareBuyerVerificationSDK
 
 enum Result<T> {
     case success
@@ -32,11 +33,11 @@ class ExampleViewController: UIViewController {
 
         cookieView.buyButton.addTarget(self, action: #selector(didTapBuyButton), for: .touchUpInside)
     }
-    
+
     @objc private func didTapBuyButton() {
         showOrderSheet()
     }
-    
+
     private func showOrderSheet() {
         // Open the buy modal
         let orderViewController = OrderViewController()
@@ -46,29 +47,29 @@ class ExampleViewController: UIViewController {
         nc.transitioningDelegate = self
         present(nc, animated: true, completion: nil)
     }
-    
-    
+
+
     private func printCurlCommand(nonce : String) {
         let uuid = UUID().uuidString
         print("curl --request POST https://connect.squareupsandbox.com/v2/payments \\" +
-            "--header \"Content-Type: application/json\" \\" +
-            "--header \"Authorization: Bearer YOUR_ACCESS_TOKEN\" \\" +
-            "--header \"Accept: application/json\" \\" +
-            "--data \'{" +
-            "\"idempotency_key\": \"\(uuid)\"," +
-            "\"autocomplete\": true," +
-            "\"amount_money\": {" +
-            "\"amount\": 100," +
-            "\"currency\": \"USD\"}," +
-            "\"source_id\": \"\(nonce)\"" +
-            "}\'");
+              "--header \"Content-Type: application/json\" \\" +
+              "--header \"Authorization: Bearer YOUR_ACCESS_TOKEN\" \\" +
+              "--header \"Accept: application/json\" \\" +
+              "--data \'{" +
+              "\"idempotency_key\": \"\(uuid)\"," +
+              "\"autocomplete\": true," +
+              "\"amount_money\": {" +
+              "\"amount\": 100," +
+              "\"currency\": \"USD\"}," +
+              "\"source_id\": \"\(nonce)\"" +
+              "}\'");
     }
-    
+
     private var serverHostSet: Bool {
         return Constants.Square.CHARGE_SERVER_HOST != "REPLACE_ME"
     }
-    
-    private var appleMerchanIdSet: Bool {
+
+    private var appleMerchantIdSet: Bool {
         return Constants.ApplePay.MERCHANT_IDENTIFIER != "REPLACE_ME"
     }
 }
@@ -87,13 +88,16 @@ extension ExampleViewController {
     }
 }
 
+// MARK: - UIViewControllerTransitioningDelegate
+
 extension ExampleViewController: UIViewControllerTransitioningDelegate {
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
         return HalfSheetPresentationController(presentedViewController: presented, presenting: presenting)
     }
 }
 
-// MARK: - OrderViewControllerDelegate functions
+// MARK: - OrderViewControllerDelegate
+
 extension ExampleViewController: OrderViewControllerDelegate {
     func didRequestPayWithCard() {
         dismiss(animated: true) {
@@ -111,6 +115,10 @@ extension ExampleViewController: OrderViewControllerDelegate {
         }
     }
 
+    func didRequestVerifyBuyer() {
+        requestBuyerVerification()
+    }
+
     private func didNotChargeApplePay(_ error: String) {
         // Let user know that the charge was not successful
         let alert = UIAlertController(title: "Your order was not successful",
@@ -119,7 +127,7 @@ extension ExampleViewController: OrderViewControllerDelegate {
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
-    
+
     private func didChargeSuccessfully() {
         // Let user know that the charge was successful
         let alert = UIAlertController(title: "Your order was successful",
@@ -128,7 +136,7 @@ extension ExampleViewController: OrderViewControllerDelegate {
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
-    
+
     private func showCurlInformation() {
         let alert = UIAlertController(title: "Nonce generated but not charged",
                                       message: "Check your console for a CURL command to charge the nonce, or replace Constants.Square.CHARGE_SERVER_HOST with your server host.",
@@ -136,7 +144,7 @@ extension ExampleViewController: OrderViewControllerDelegate {
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
-    
+
     private func showMerchantIdNotSet() {
         let alert = UIAlertController(title: "Missing Apple Pay Merchant ID",
                                       message: "To request an Apple Pay nonce, replace Constants.ApplePay.MERCHANT_IDENTIFIER with a Merchant ID.",
@@ -145,6 +153,61 @@ extension ExampleViewController: OrderViewControllerDelegate {
         present(alert, animated: true, completion: nil)
     }
 }
+
+// MARK: - Buyer Verification
+
+extension ExampleViewController {
+    func requestBuyerVerification() {
+        let parameters = makeVerificationParameters(
+            paymentSourceID: "ccof:customer-card-id-requires-verification",
+            buyerAction: .charge(
+                .init(amount: 100, currency: .USD)
+            )
+        )
+
+        SQIPBuyerVerificationSDK.shared.verify(
+            with: parameters,
+            theme: makeSquareTheme(),
+            viewController: self,
+            success: { (details) in   //2: verification token available
+                print(details)
+            },
+            failure: { error in
+                print(error)
+            }
+        )
+    }
+
+    func makeVerificationParameters(paymentSourceID: String, buyerAction: SQIPBuyerAction) -> SQIPVerificationParameters {
+        let contact = SQIPContact()
+        contact.givenName = "John"
+        contact.familyName = "Doe"
+        contact.email = "johndoe@example.com"
+        contact.addressLines = ["London Eye","Riverside Walk"]
+        contact.city = "London"
+        contact.country = .GB
+        contact.postalCode = "SE1 7"
+        contact.phone = "8001234567"
+
+        return SQIPVerificationParameters(
+            paymentSourceID: paymentSourceID,
+            buyerAction: buyerAction,
+            locationID: Constants.Square.SQUARE_LOCATION_ID,
+            contact: contact
+        )
+    }
+
+    func makeSquareTheme() -> SQIPTheme{
+        let theme = SQIPTheme()
+        theme.errorColor = .red
+        theme.tintColor = Color.primaryAction
+        theme.keyboardAppearance = .light
+        theme.messageColor = Color.descriptionFont
+        return theme
+    }
+}
+
+// MARK: - Card Entry
 
 extension ExampleViewController: SQIPCardEntryViewControllerDelegate {
     func cardEntryViewController(_ cardEntryViewController: SQIPCardEntryViewController, didCompleteWith status: SQIPCardEntryCompletionStatus) {
@@ -168,7 +231,7 @@ extension ExampleViewController: SQIPCardEntryViewControllerDelegate {
 
     func cardEntryViewController(_ cardEntryViewController: SQIPCardEntryViewController, didObtain cardDetails: SQIPCardDetails, completionHandler: @escaping (Error?) -> Void) {
         print("Payment token (nonce) generated by In-App Payments SDK: \(cardDetails.nonce)")
-        
+
         guard serverHostSet else {
             printCurlCommand(nonce: cardDetails.nonce)
             completionHandler(nil)
@@ -189,13 +252,15 @@ extension ExampleViewController: SQIPCardEntryViewControllerDelegate {
     }
 }
 
+// MARK: - Apple Pay
+
 extension ExampleViewController: PKPaymentAuthorizationViewControllerDelegate {
     func requestApplePayAuthorization() {
         guard SQIPInAppPaymentsSDK.canUseApplePay else {
             return
         }
 
-        guard appleMerchanIdSet else {
+        guard appleMerchantIdSet else {
             showMerchantIdNotSet()
             return
         }
@@ -231,19 +296,19 @@ extension ExampleViewController: PKPaymentAuthorizationViewControllerDelegate {
                 completion(PKPaymentAuthorizationResult(status: .failure, errors: errors))
                 return
             }
-            
+
             guard let strongSelf = self else {
                 completion(PKPaymentAuthorizationResult(status: .failure, errors: []))
                 return
             }
-            
+
             guard strongSelf.serverHostSet else {
                 strongSelf.printCurlCommand(nonce: cardDetails.nonce)
                 strongSelf.applePayResult = .success
                 completion(PKPaymentAuthorizationResult(status: .failure, errors: []))
                 return
             }
-            
+
             ChargeApi.processPayment(cardDetails.nonce) { (transactionId, error) in
                 if let error = error, !error.isEmpty {
                     strongSelf.applePayResult = Result.failure(error)

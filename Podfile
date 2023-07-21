@@ -6,4 +6,5 @@ target 'InAppPaymentsSample' do
   use_frameworks!
 
   pod 'SquareInAppPaymentsSDK', '1.6.1'
+  pod 'SquareBuyerVerificationSDK', '1.6.1'
 end
