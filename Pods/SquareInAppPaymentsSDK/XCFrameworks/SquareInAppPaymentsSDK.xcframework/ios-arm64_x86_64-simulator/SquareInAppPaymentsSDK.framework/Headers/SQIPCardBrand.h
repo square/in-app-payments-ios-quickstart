@@ -41,7 +41,7 @@ typedef NS_CLOSED_ENUM(NSUInteger, SQIPCardBrand) {
     /** JCB */
     SQIPCardBrandJCB,
 
-    /** China UnionPay */
+    /** UnionPay International/China UnionPay */
     SQIPCardBrandChinaUnionPay,
 
     /** Square Gift Card */
