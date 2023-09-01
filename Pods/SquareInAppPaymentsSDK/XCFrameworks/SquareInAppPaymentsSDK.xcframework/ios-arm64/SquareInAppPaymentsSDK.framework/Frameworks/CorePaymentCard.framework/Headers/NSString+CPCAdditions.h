@@ -11,8 +11,6 @@
 
 @interface NSString (CPCAdditions)
 
-+ (instancetype)_CPC_stringWithCString:(const char *)cString length:(size_t)length encoding:(NSStringEncoding)encoding;
-
 - (NSString *)CPC_stringByRemovingNonNumericCharacters;
 
 @end

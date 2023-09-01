@@ -36,7 +36,8 @@ typedef NS_ENUM(NSInteger, CPCCardBrand) {
     CPCCardBrandEftpos = 0xA,
     CPCCardBrandSquareCapitalCard = 0xB,
     CPCCardBrandFelica = 0xC,
-    CPCCardBrandCount = 0xD
+    CPCCardBrandEBT = 0xD,
+    CPCCardBrandCount = 0xE
 };
 
 typedef NS_ENUM(NSInteger, CPCIssuingBank) {
