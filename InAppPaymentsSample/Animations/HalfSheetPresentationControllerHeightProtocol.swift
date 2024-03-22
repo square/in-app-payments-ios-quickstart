@@ -16,7 +16,7 @@
 
 import UIKit
 
-protocol HalfSheetPresentationControllerHeightProtocol: class {
+protocol HalfSheetPresentationControllerHeightProtocol: AnyObject {
     var halfsheetHeight: CGFloat { get }
 }
 

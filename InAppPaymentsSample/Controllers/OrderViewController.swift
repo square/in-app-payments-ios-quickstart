@@ -17,7 +17,7 @@
 import UIKit
 import SquareInAppPaymentsSDK
 
-protocol OrderViewControllerDelegate: class {
+protocol OrderViewControllerDelegate: AnyObject {
     func didRequestPayWithApplyPay()
     func didRequestPayWithCard()
 }
@@ -52,6 +52,6 @@ class OrderViewController : UIViewController {
 
 extension OrderViewController: HalfSheetPresentationControllerHeightProtocol {
     var halfsheetHeight: CGFloat {
-        return (view as! OrderView).stackView.systemLayoutSizeFitting(UILayoutFittingExpandedSize).height
+        return (view as! OrderView).stackView.systemLayoutSizeFitting(UIView.layoutFittingExpandedSize).height
     }
 }

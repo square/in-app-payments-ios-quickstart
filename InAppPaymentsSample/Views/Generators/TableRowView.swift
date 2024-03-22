@@ -118,7 +118,7 @@ extension TableRowView {
         label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
 
         let paragraphStyle = NSMutableParagraphStyle()
-        let attributes = [NSAttributedStringKey.paragraphStyle : paragraphStyle]
+        let attributes = [NSAttributedString.Key.paragraphStyle : paragraphStyle]
         label.attributedText = NSMutableAttributedString(string: text, attributes: attributes)
 
         label.translatesAutoresizingMaskIntoConstraints = false

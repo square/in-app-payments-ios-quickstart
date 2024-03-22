@@ -87,7 +87,7 @@ extension ExampleView {
 
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = 5
-        let attributes = [NSAttributedStringKey.paragraphStyle : paragraphStyle]
+        let attributes = [NSAttributedString.Key.paragraphStyle : paragraphStyle]
         textLabel.textAlignment = .right
         textLabel.attributedText = NSMutableAttributedString(string: "Instantly gain special powers\nwhen ordering a super cookie", attributes: attributes)
         textLabel.textAlignment = .center

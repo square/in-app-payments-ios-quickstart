@@ -115,7 +115,7 @@ extension ExampleViewController: OrderViewControllerDelegate {
         // Let user know that the charge was not successful
         let alert = UIAlertController(title: "Your order was not successful",
                                       message: error,
-                                      preferredStyle: UIAlertControllerStyle.alert)
+                                      preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
@@ -124,7 +124,7 @@ extension ExampleViewController: OrderViewControllerDelegate {
         // Let user know that the charge was successful
         let alert = UIAlertController(title: "Your order was successful",
                                       message: "Go to your Square dashbord to see this order reflected in the sales tab.",
-                                      preferredStyle: UIAlertControllerStyle.alert)
+                                      preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
@@ -132,7 +132,7 @@ extension ExampleViewController: OrderViewControllerDelegate {
     private func showCurlInformation() {
         let alert = UIAlertController(title: "Nonce generated but not charged",
                                       message: "Check your console for a CURL command to charge the nonce, or replace Constants.Square.CHARGE_SERVER_HOST with your server host.",
-                                      preferredStyle: UIAlertControllerStyle.alert)
+                                      preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
@@ -140,7 +140,7 @@ extension ExampleViewController: OrderViewControllerDelegate {
     private func showMerchantIdNotSet() {
         let alert = UIAlertController(title: "Missing Apple Pay Merchant ID",
                                       message: "To request an Apple Pay nonce, replace Constants.ApplePay.MERCHANT_IDENTIFIER with a Merchant ID.",
-                                      preferredStyle: UIAlertControllerStyle.alert)
+                                      preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
