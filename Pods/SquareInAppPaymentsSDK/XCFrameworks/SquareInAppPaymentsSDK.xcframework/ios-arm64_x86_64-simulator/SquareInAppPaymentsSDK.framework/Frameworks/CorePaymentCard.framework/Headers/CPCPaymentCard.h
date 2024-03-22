@@ -100,6 +100,8 @@ FOUNDATION_EXPORT NSString *NSStringFromCPCPaymentCardVerificationMethod(CPCPaym
 @property (nonatomic, copy, nullable) NSData *authorizationResponseData;
 @property (nonatomic, copy, nullable) NSData *captureRequestData;
 
+@property (nonatomic, copy, nullable) NSString *authorizationResponseCode;
+
 /// @return YES if the card is authorizable where authorizable means an add-tender request is possible to transition the payment source into .Authorizing.
 @property (nonatomic, assign, readonly, getter=isAuthorizable) BOOL authorizable;
 
@@ -134,6 +136,10 @@ FOUNDATION_EXPORT NSString *NSStringFromCPCPaymentCardVerificationMethod(CPCPaym
 
 /// An array of CRPaymentAccounts corresponding to all the available accounts of an EMV payment card.
 @property (nonatomic, copy) NSArray *accounts;
+
+/// Used for transmitting non-sensitive EMV data. 
+/// Primarily for the Tap to Pay's generalCardData https://developer.apple.com/documentation/proximityreader/paymentcardreadresult/generalcarddata
+@property (nonatomic, copy, nullable) NSData *generalCardData;
 
 + (NSDateFormatter *)expirationDateFormatter;
 

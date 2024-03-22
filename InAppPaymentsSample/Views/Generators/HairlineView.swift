@@ -32,6 +32,6 @@ class HairlineView : UIView {
     }
 
     override var intrinsicContentSize: CGSize {
-        return CGSize(width: UIViewNoIntrinsicMetric, height: 1)
+        return CGSize(width: UIView.noIntrinsicMetric, height: 1)
     }
 }

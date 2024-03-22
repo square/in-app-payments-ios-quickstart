@@ -74,7 +74,7 @@ extension OrderView {
 
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = 8
-        let attributes = [NSAttributedStringKey.paragraphStyle : paragraphStyle]
+        let attributes = [NSAttributedString.Key.paragraphStyle : paragraphStyle]
 
         label.attributedText = NSMutableAttributedString(string: "You can refund this transaction through your Square dashboard, goto squareup.com/dashboard.", attributes: attributes)
         label.numberOfLines = 2
