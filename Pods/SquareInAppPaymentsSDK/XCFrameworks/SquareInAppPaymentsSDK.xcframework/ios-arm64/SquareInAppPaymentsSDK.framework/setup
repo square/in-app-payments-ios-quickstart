@@ -8,29 +8,21 @@ IFS=$(echo "")
 
 IAP_SDK_FRAMEWORKS=("SquareInAppPaymentsSDK" "SquareBuyerVerificationSDK")
 MAIN_FRAMEWORKS_DIR="$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH"
-SECONDARY_FRAMEWORKS_DIR="$CONFIGURATION_BUILD_DIR"
 
 # Unpack frameworks
 for FRAMEWORK_NAME in "${IAP_SDK_FRAMEWORKS[@]}"; do
   FRAMEWORK_PATH="$FRAMEWORK_NAME.framework/Frameworks"
   MAIN_NESTED_FRAMEWORKS_DIR="$MAIN_FRAMEWORKS_DIR/$FRAMEWORK_PATH"
-  SECONDARY_NESTED_FRAMEWORKS_DIR="$SECONDARY_FRAMEWORKS_DIR/$FRAMEWORK_PATH"
 
   if [ -d "$MAIN_NESTED_FRAMEWORKS_DIR" ]; then
-    NESTED_FRAMEWORKS_DIR=$MAIN_NESTED_FRAMEWORKS_DIR
-  else
-    NESTED_FRAMEWORKS_DIR=$SECONDARY_NESTED_FRAMEWORKS_DIR
-  fi
-
-  if [ -d "$NESTED_FRAMEWORKS_DIR" ]; then
     # Handle all nested frameworks that are fat frameworks
-    find "$NESTED_FRAMEWORKS_DIR" -name '*.framework' ! -path '*.xcframework/*' -type d | while read -r FRAMEWORK; do
+    find "$MAIN_NESTED_FRAMEWORKS_DIR" -name '*.framework' ! -path '*.xcframework/*' -type d | while read -r FRAMEWORK; do
       rm -rf "$MAIN_FRAMEWORKS_DIR/$(basename "$FRAMEWORK")/"
       mv -f "$FRAMEWORK/" "$MAIN_FRAMEWORKS_DIR"
     done
 
     # Handle all nested frameworks that are xcframeworks
-    find "$NESTED_FRAMEWORKS_DIR" -name '*.xcframework' -type d | while read -r XCFRAMEWORK; do
+    find "$MAIN_NESTED_FRAMEWORKS_DIR" -name '*.xcframework' -type d | while read -r XCFRAMEWORK; do
 
       # $SDK_NAMES is an environment variable set by the xcodebuild process
       # Possible values can be seen by running `xcodebuild -showsdks`
@@ -61,29 +53,11 @@ for FRAMEWORK_NAME in "${IAP_SDK_FRAMEWORKS[@]}"; do
     done
 
     # If the nested framework directory does not contain any further framework binaries then clean it up
-    if [ -z "$(find "$NESTED_FRAMEWORKS_DIR" -name "*.framework" -type d)" ]; then
-      rm -rf "$NESTED_FRAMEWORKS_DIR"
+    if [ -z "$(find "$MAIN_NESTED_FRAMEWORKS_DIR" -name "*.framework" -type d)" ]; then
+      rm -rf "$MAIN_NESTED_FRAMEWORKS_DIR"
     fi
   fi
 done
-
-# Workaround for Swift Package Manager
-SOURCE_PACKAGE_FRAMEWORK_DIR="${BUILD_DIR%Build/*}SourcePackages/checkouts/in-app-payments-ios/XCFrameworks"
-
-if [ -d "$SOURCE_PACKAGE_FRAMEWORK_DIR" ]; then
-  for FRAMEWORK_NAME in "${IAP_SDK_FRAMEWORKS[@]}"; do
-    FRAMEWORK_PATH="$FRAMEWORK_NAME.xcframework"
-    SOURCE_FRAMEWORK_NESTED_DIR="$SOURCE_PACKAGE_FRAMEWORK_DIR/$FRAMEWORK_PATH"
-    # Find root directory inside of regular and simulator folders
-    find "$SOURCE_FRAMEWORK_NESTED_DIR" -name '*.framework' ! -path '*.framework/Frameworks/*' -type d | while read -r FRAMEWORK_DIR; do
-      rm -rf "$FRAMEWORK_DIR/Frameworks"
-      # Delete the setup script if archiving
-      if [ "$ACTION" = "install" ]; then
-        rm -rf "$FRAMEWORK_DIR/setup"
-      fi
-    done
-  done
-fi
 
 IFS=$OLDIFS
 
