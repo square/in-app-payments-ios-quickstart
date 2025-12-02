@@ -25,7 +25,8 @@
 		72C92A14217FDEF2006A02AF /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C92A13217FDEF2006A02AF /* ExampleView.swift */; };
 		72C92A162180C3D3006A02AF /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C92A152180C3D3006A02AF /* OrderViewController.swift */; };
 		72C92A182180C3FF006A02AF /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C92A172180C3FF006A02AF /* OrderView.swift */; };
-		EC6913EBF1D8006AA26B7FB6 /* Pods_InAppPaymentsSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C31A54A62C6BEDE218BA60 /* Pods_InAppPaymentsSample.framework */; };
+		FBB86A8E2EDE259400252652 /* SquareBuyerVerificationSDK in Frameworks */ = {isa = PBXBuildFile; productRef = FBB86A8D2EDE259400252652 /* SquareBuyerVerificationSDK */; };
+		FBB86A902EDE259400252652 /* SquareInAppPaymentsSDK in Frameworks */ = {isa = PBXBuildFile; productRef = FBB86A8F2EDE259400252652 /* SquareInAppPaymentsSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,7 +53,6 @@
 		2E46D2F721B9D65D006CA233 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		2E46D2FB21B9E4A2006CA233 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		2E58CC6521B7409000DFE6B0 /* TableRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRowView.swift; sourceTree = "<group>"; };
-		53C31A54A62C6BEDE218BA60 /* Pods_InAppPaymentsSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InAppPaymentsSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		726602272183C5AF00EAB0D9 /* mCommExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mCommExample.entitlements; sourceTree = "<group>"; };
 		72B9788F219CE5FB001C964B /* ChargeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeApi.swift; sourceTree = "<group>"; };
 		72C929F7217E8CFE006A02AF /* InAppPaymentsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InAppPaymentsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,8 +65,6 @@
 		72C92A152180C3D3006A02AF /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		72C92A172180C3FF006A02AF /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		72EB0DBC2188ACD60010CE0B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		9CBD217F62E5DBF3C04A1CCB /* Pods-InAppPaymentsSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InAppPaymentsSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InAppPaymentsSample/Pods-InAppPaymentsSample.debug.xcconfig"; sourceTree = "<group>"; };
-		A82933F3919BDE3EA6308E84 /* Pods-InAppPaymentsSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InAppPaymentsSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-InAppPaymentsSample/Pods-InAppPaymentsSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC6913EBF1D8006AA26B7FB6 /* Pods_InAppPaymentsSample.framework in Frameworks */,
+				FBB86A902EDE259400252652 /* SquareInAppPaymentsSDK in Frameworks */,
+				FBB86A8E2EDE259400252652 /* SquareBuyerVerificationSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,31 +125,12 @@
 			path = Generators;
 			sourceTree = "<group>";
 		};
-		4D2CBFB751DB38ABB886D1EE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				53C31A54A62C6BEDE218BA60 /* Pods_InAppPaymentsSample.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5673F7EC645F1C81F5FE0A99 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9CBD217F62E5DBF3C04A1CCB /* Pods-InAppPaymentsSample.debug.xcconfig */,
-				A82933F3919BDE3EA6308E84 /* Pods-InAppPaymentsSample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		72C929EE217E8CFE006A02AF = {
 			isa = PBXGroup;
 			children = (
 				72EB0DBC2188ACD60010CE0B /* README.md */,
 				72C929F9217E8CFE006A02AF /* InAppPaymentsSample */,
 				72C929F8217E8CFE006A02AF /* Products */,
-				5673F7EC645F1C81F5FE0A99 /* Pods */,
-				4D2CBFB751DB38ABB886D1EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,12 +187,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72C92A09217E8CFF006A02AF /* Build configuration list for PBXNativeTarget "InAppPaymentsSample" */;
 			buildPhases = (
-				9BCFF56A97B652E1FFD6CA8D /* [CP] Check Pods Manifest.lock */,
 				72C929F3217E8CFE006A02AF /* Sources */,
 				72C929F4217E8CFE006A02AF /* Frameworks */,
 				72C929F5217E8CFE006A02AF /* Resources */,
 				72D1F23521B747C400517BAE /* Embed Frameworks */,
-				1F57FB744F6663C80AC2E825 /* [CP] Embed Pods Frameworks */,
 				72C92A10217E8E73006A02AF /* Install SquareInAppPayments */,
 			);
 			buildRules = (
@@ -255,6 +233,9 @@
 				Base,
 			);
 			mainGroup = 72C929EE217E8CFE006A02AF;
+			packageReferences = (
+				FBB86A8C2EDE259400252652 /* XCRemoteSwiftPackageReference "in-app-payments-ios" */,
+			);
 			productRefGroup = 72C929F8217E8CFE006A02AF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -277,24 +258,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1F57FB744F6663C80AC2E825 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InAppPaymentsSample/Pods-InAppPaymentsSample-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/SquareInAppPaymentsSDK/SquareInAppPaymentsSDK.framework/SquareInAppPaymentsSDK",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SquareInAppPaymentsSDK.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InAppPaymentsSample/Pods-InAppPaymentsSample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		72C92A10217E8E73006A02AF /* Install SquareInAppPayments */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -307,29 +270,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "FRAMEWORKS=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\n\"${FRAMEWORKS}/SquareInAppPaymentsSDK.framework/setup\"\n";
-		};
-		9BCFF56A97B652E1FFD6CA8D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-InAppPaymentsSample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "# Skip the script in CI builds\nif [ \"$SKIP_SETUP_SCRIPT\" = \"YES\" ]; then\n  exit 0\nfi\n\n# This part should be added to your project\nFRAMEWORKS=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\n\"${FRAMEWORKS}/SquareInAppPaymentsSDK.framework/setup\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -423,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -478,7 +419,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -489,7 +430,6 @@
 		};
 		72C92A0A217E8CFF006A02AF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CBD217F62E5DBF3C04A1CCB /* Pods-InAppPaymentsSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -501,7 +441,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = InAppPaymentsSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -516,7 +456,6 @@
 		};
 		72C92A0B217E8CFF006A02AF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A82933F3919BDE3EA6308E84 /* Pods-InAppPaymentsSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -528,7 +467,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = InAppPaymentsSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -563,6 +502,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FBB86A8C2EDE259400252652 /* XCRemoteSwiftPackageReference "in-app-payments-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/square/in-app-payments-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FBB86A8D2EDE259400252652 /* SquareBuyerVerificationSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBB86A8C2EDE259400252652 /* XCRemoteSwiftPackageReference "in-app-payments-ios" */;
+			productName = SquareBuyerVerificationSDK;
+		};
+		FBB86A8F2EDE259400252652 /* SquareInAppPaymentsSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBB86A8C2EDE259400252652 /* XCRemoteSwiftPackageReference "in-app-payments-ios" */;
+			productName = SquareInAppPaymentsSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 72C929EF217E8CFE006A02AF /* Project object */;
 }
