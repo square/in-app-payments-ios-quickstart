@@ -1,0 +1,23 @@
+name: iOS Build
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v5
+
+    - name: Setup Xcode
+      uses: ./.github/actions/setup-xcode
+
+    - name: Build App
+      run: |
+        xcodebuild -project InAppPaymentsSample.xcodeproj -scheme InAppPaymentsSample -sdk iphoneos -configuration Release SKIP_SETUP_SCRIPT=YES CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY=NO

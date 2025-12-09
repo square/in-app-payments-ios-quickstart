@@ -1,0 +1,8 @@
+name: Setup Xcode
+description: Performs Xcode setup common to the workflows.
+runs:
+  using: composite
+  steps:
+    - name: Select Xcode
+      shell: bash
+      run: sudo xcode-select -s /Applications/Xcode_16.4.app
