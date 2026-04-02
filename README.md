@@ -1,5 +1,9 @@
 #  In-App Payments Quick Start Sample iOS Application
 
+## Supported SDK version
+
+* In-App Payments SDK: `1.6.5`
+
 Follow the [In-App Payments Quick Start Guide](https://docs.connect.squareup.com/payments/in-app-payments-sdk/quickstart/start) to take payments in an app running on a buyer's personal mobile device.
 
 ## License
