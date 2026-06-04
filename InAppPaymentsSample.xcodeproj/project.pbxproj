@@ -509,7 +509,7 @@
 			repositoryURL = "https://github.com/square/in-app-payments-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.6.5;
+				minimumVersion = 1.6.6;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
